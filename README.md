@@ -35,12 +35,12 @@ opencode CLI 的 Windows 包可在 [releases](https://github.com/anomalyco/openc
 
 ## 防火墙
 
-首次使用如果手机打不开，在管理员 PowerShell 执行一次：
+首次使用如果客户端打不开，在管理员 PowerShell 执行一次：
 
 ```powershell
 New-NetFirewallRule -DisplayName "OpenCode Web 4096" -Direction Inbound -Protocol TCP -LocalPort 4096 -Action Allow
 ```
-
+手机基本不会有客户端无法走代理的问题。
 ## 常见问题
 
 - `ServeError`：已有实例占用 4096，直接用旧窗口，或先关掉旧实例
